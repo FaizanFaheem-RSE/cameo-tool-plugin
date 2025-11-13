@@ -6,4 +6,5 @@
 5.	Right click “Project folder name” and go to “Properties”. Under properties, go to “Java Build Path⇾Libraries” and set the class path by clicking on the individual class and clicking on Edit
 6.	Click on “Project floder name” than go to File⇾Export
 7.	Choose the Jar file as export and the export location
+8.	Copy the jar and the XML file into MagicDraw/plugins/myplugin
   
