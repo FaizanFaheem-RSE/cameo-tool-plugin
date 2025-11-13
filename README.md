@@ -7,4 +7,5 @@
 6.	Click on “Project floder name” than go to File⇾Export
 7.	Choose the Jar file as export and the export location
 8.	Copy the jar and the XML file into MagicDraw/plugins/myplugin
+9.	Open MagicDraw and the plugin is loaded
   
