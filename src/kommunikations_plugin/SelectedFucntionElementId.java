@@ -18,7 +18,6 @@ public class SelectedFucntionElementId {
 		if (selectedElement != null && selectedElement.getElement() instanceof Activity) {
 			
                         // Here returing the ID of the selected Activity/Function 
-
 			funtionID = selectedElement.getElement().getID();
 		}
 		else {
