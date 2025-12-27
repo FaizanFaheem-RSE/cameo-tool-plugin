@@ -13,7 +13,7 @@ public class Kommunikations_Plugin extends Plugin {
 	}
 
 	private void createDiagramAction() {
-		SPARQLQueryManager action = new SPARQLQueryManager("Potential Error Analysis", " Potential Error Analysis");
+		SPARQLQueryManager action = new SPARQLQueryManager("Potential Failure Analysis", " Potential Failure Analysis");
 		DiagramConfiguration configurator = new DiagramConfiguration(action);
 		ActionsConfiguratorsManager.getInstance().addAnyDiagramCommandBarConfigurator(configurator);
 	}
