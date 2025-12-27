@@ -23,8 +23,7 @@ public class SelectedFucntionElementId {
 		}
 		else {
 
-                        // This message will be displayed if a system element other than Activity/Function
- is selected.
+                        // This message will be displayed if a system element other than Activity/Function is selected.
 			Application.getInstance().getGUILog().showMessage("Please select the Activity/Function from the specified SysML model") ;
 		}
 		return funtionID;
