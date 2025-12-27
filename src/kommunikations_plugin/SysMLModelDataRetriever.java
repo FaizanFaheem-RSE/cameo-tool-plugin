@@ -106,7 +106,6 @@ public class SysMLModelDataRetriever {
 			ActicityPropertyList.clear();
 			SystemElementPropertyList.clear();
 
-			// Here I am incrementing the counter so that each time new record can be extracted 
 			// Step by step I am extracting the records and shrinking the size of list  
 			count ++; 
 			listsize--; 
