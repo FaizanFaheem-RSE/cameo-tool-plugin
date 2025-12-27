@@ -33,8 +33,7 @@ public class SysMLModelDataRetriever {
 		while (listsize > 0 ) {
 			for (String value : records.get(count)) {
 
-				// Here I am checking if its system element, Activity/Function and etc and storing it in 
-				// variables so that these names I can fill within the sparql query
+				// Here checking if it is system element, Activity/Function etc and storing it in  variables so that these names can be filled within the query template to formulate SPARQL query
 				if(value.contains(",") && value.contains("Systemelement")) {
 
 
@@ -106,7 +105,7 @@ public class SysMLModelDataRetriever {
 			ActicityPropertyList.clear();
 			SystemElementPropertyList.clear();
 
-			// Step by step I am extracting the records and shrinking the size of list  
+			// Extracting the records and shrinking the size of list  
 			count ++; 
 			listsize--; 
 
