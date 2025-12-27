@@ -113,7 +113,7 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 						int lastIndex = newUrl.lastIndexOf(searchString);
 						String result = newUrl.substring(lastIndex + searchString.length());
 
-						Application.getInstance().getGUILog().showMessage("Potential Errors: " + result);
+						Application.getInstance().getGUILog().showMessage("Potential Failures: " + result);
 					}
 				}
 
