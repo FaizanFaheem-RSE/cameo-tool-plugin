@@ -19,7 +19,6 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 		super(id, name, null, null);
 
 		URL url = getClass().getResource("/pick.png");
-		//URL url = getClass().getResource("/icon.png");
 		setSmallIcon(new ScalableImageIcon(url));
 	}
 
@@ -70,13 +69,13 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 						+ "}";
 				String requestUrl = endpointUrl + "?query=" + java.net.URLEncoder.encode(queryString, "UTF-8");
 
-				// Here I am Creating an HTTP connection object and setting the request method and headers
+				// Creating an HTTP connection and setting the request
 				URL url = new URL(requestUrl);
 				HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 				conn.setRequestMethod("GET");
 				conn.setRequestProperty("Accept", "application/sparql-results+json");
 
-				// Here reading the response from server 
+				// Reading the response from server 
 				BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 				String line;
 				StringBuilder responseBuilder = new StringBuilder();
@@ -86,13 +85,12 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 				in.close();
 
 
-				// Print the response from the server
+				// Response from the server
 				String response = responseBuilder.toString();
 
 				Application.getInstance().getGUILog().showMessage("Errors: " + response);
 
-				// Here the parsing is started and I am using Jackson to parse the json in order 
-				// to extract the potential errors 
+				// Used Jackson library to parse JSON in order to extract the potential failures  
 				ObjectMapper objectMapper = new ObjectMapper();
 				JsonNode jsonNode = objectMapper.readTree(response);
 
@@ -116,8 +114,6 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 						Application.getInstance().getGUILog().showMessage("Potential Failures: " + result);
 					}
 				}
-
-				// Parsing end
 
 			} catch (Exception e) {
 				e.printStackTrace();
