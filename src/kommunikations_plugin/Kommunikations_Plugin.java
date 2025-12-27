@@ -10,8 +10,6 @@ public class Kommunikations_Plugin extends Plugin {
 	@Override
 	public void init() {
 		createDiagramAction();
-		//	createBrowserAction();
-		//	createMainMenuAction();
 	}
 
 	private void createDiagramAction() {
