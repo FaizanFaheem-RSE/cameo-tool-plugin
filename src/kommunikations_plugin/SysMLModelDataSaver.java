@@ -42,13 +42,13 @@ public class SysMLModelDataSaver {
 				record1 = new ArrayList<>(); 
 
 
-				// Insert the relationship with an additional string to facilitate retrieval later in SysMLModelRetriever.java class 
+				// Insert the relationship with an additional string to facilitate retrieval later in SysMLModelDataRetriever.java class 
 				record1.add(relationshipNameString + RelationshipNames);
 
 				// Getting the SysML elements on the both sides of relation including the Function/Activity and Related SysML element
 				Collection<?> relatedElements = relationship.getRelatedElement();
 
-				// Iterating all the SysML elements relevant to the relationships of the selected function/activity including the function/activity itself 
+				// Iterating all the SysML elements relevant to the relationships of the selected Function/Activity including the function/activity itself 
 				for (Object relatedElementObject : relatedElements) {
 
 					Element relatedElement = (Element) relatedElementObject;
