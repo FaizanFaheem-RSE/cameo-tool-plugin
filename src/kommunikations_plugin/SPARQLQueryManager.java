@@ -112,6 +112,8 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 						String result = newUrl.substring(lastIndex + searchString.length());
 
 						Application.getInstance().getGUILog().showMessage("Potential Failures: " + result);
+
+						Application.getInstance().getGUILog().showMessage("System Element" + SystemelemntNameExtractedRightPartDone + ", " + "Activity" + ActivityNameExtractedRightPartDone + ", " + "Relationship" + relationshipdone + ", " + "Activity Property" + ActivityPropertyForQuery + ", " + "System Element Propeerty" + SystemElementPropertyForQuery + ", " + "Potential Failures" + result);
 					}
 				}
 
