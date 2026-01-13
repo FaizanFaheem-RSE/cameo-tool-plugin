@@ -16,7 +16,7 @@ This plugin couples SysML models created in Cameo Systems Modeler (MagicDraw-bas
 5. Configure the Java Build Path for the plugin:
    - Right-click **Plugin Folder Name** and go to **Properties**.
    - Under **Properties**, navigate to **Java Build Path → Libraries**.
-   - Identify all build path entries marked as *(missing)*.
+   - Identify all build path missing entries.
    - Select each missing library entry and click **Edit**.
 6. Click on **Project folder** name than go to File ⇾ Export.
 7. Choose the Jar file as export and the export location.
