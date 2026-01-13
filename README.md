@@ -9,7 +9,7 @@
 8.	Copy the jar and the XML file into Cameo Systems Modeler/plugins/myplugin
 9.	Open MagicDraw and the plugin is loaded
 
-## Potential Failure Analysis in Cameo Systems Model
+## Potential Failure Analysis in Cameo Systems Modeler
 <p align="center"><img width="700" alt="Potential Failure Analysis" src="https://github.com/user-attachments/assets/9fd4efa5-a392-48ef-9ece-16686ff93389" /></p>
 
 
