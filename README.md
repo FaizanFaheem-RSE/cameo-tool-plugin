@@ -18,10 +18,10 @@ This plugin couples SysML models created in Cameo Systems Modeler (MagicDraw-bas
    - Under **Properties**, navigate to **Java Build Path → Libraries**.
    - Identify all build path entries marked as *(missing)*.
    - Select each missing library entry and click **Edit**.
-6.	Click on Project floder name than go to File ⇾ Export.
-7.	Choose the Jar file as export and the export location.
-8.	Copy the jar and the XML file into Cameo Systems Modeler/plugins/myplugin. 
-9.	Open MagicDraw and the plugin is loaded. 
+6. Click on **Project folder** name than go to File ⇾ Export.
+7. Choose the Jar file as export and the export location.
+8. Copy the jar and the XML file into Cameo Systems Modeler/plugins/myplugin.
+9. Open Cameo/MagicDraw and the plugin is loaded.
 
 ## Potential Failure Analysis in Cameo Systems Modeler
 <p align="center"><img width="700" alt="Potential Failure Analysis" src="https://github.com/user-attachments/assets/9fd4efa5-a392-48ef-9ece-16686ff93389" /></p>
