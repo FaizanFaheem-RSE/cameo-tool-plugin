@@ -51,21 +51,21 @@ public class SPARQLQueryManager extends DefaultDiagramAction {
 						+ "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\r\n"
 						+ "PREFIX : <http://pse.com/>\r\n"
 						+ "\r\n"
-						+ "SELECT DISTINCT ?commonRelation ?commonRelationName ?commonList ?Errors\r\n"
+						+ "SELECT DISTINCT ?commonContext ?contextRelationship ?commonList ?Failures\r\n"
 						+ "WHERE {\r\n"
-						+ "  "+ SystemelemntNameExtractedRightPartDone +" :has_relation ?commonRelation .\r\n"  // System element name
+						+ "  "+ SystemelemntNameExtractedRightPartDone +" :has_relation ?commonContext .\r\n"  // System element name
 						+ "\r\n"
-						+ "  "+ ActivityNameExtractedRightPartDone +" :has_relation ?commonRelation .\r\n" // Function name
+						+ "  "+ ActivityNameExtractedRightPartDone +" :has_relation ?commonContext .\r\n" // Function name
 						+ "\r\n"
-						+ "  "+ SystemElementPropertyForQuery +" :has_relation ?commonRelation .\r\n" // System element property
-						+ "  "+  ActivityPropertyForQuery +" :has_relation ?commonRelation .\r\n"    // Function property
+						+ "  "+ SystemElementPropertyForQuery +" :has_relation ?commonContext .\r\n" // System element property
+						+ "  "+  ActivityPropertyForQuery +" :has_relation ?commonContext .\r\n"    // Function property
 						+ "\r\n"
-						+ "  ?commonRelation :relationship_name "+ relationshipdone +" ;\r\n"
+						+ "  ?commonContext :has_context_relationship "+ relationshipdone +" ;\r\n"
 						+ "                  :could_lead_to ?commonList .\r\n"
 						+ "\r\n"
-						+ "  "+ relationshipdone +" :could_lead_to ?commonList .\r\n"
+						+ "  "+ relationshipdone +" :associated_with ?commonList .\r\n"
 						+ "\r\n"
-						+ "  ?commonList :that_is ?Errors .\r\n"
+						+ "  ?commonList :has_failure ?Failures .\r\n"
 						+ "}";
 				String requestUrl = endpointUrl + "?query=" + java.net.URLEncoder.encode(queryString, "UTF-8");
 
